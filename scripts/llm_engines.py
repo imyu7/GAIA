@@ -59,6 +59,7 @@ class AnthropicEngine:
         else:
             if model_name is None:
                 model_name = "claude-3-5-sonnet-20241022"
+            self.model_name = model_name
             self.client = Anthropic(
                 api_key=os.getenv("ANTHROPIC_API_KEY"),
             )
